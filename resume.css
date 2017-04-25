@@ -1,58 +1,93 @@
 body {
-    font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 div.header {
-    text-align: center;
-    padding-bottom: 25px;
+  text-align: center;
+  padding-bottom: 25px;
 }
 
 p.resume-title {
-    font-family: 'Heebo', sans-serif;
-    font-weight: normal;
-    font-size: 30px;
+  font-family: 'Heebo', sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+p.resume-subtitle-links {
+  display: block;
+}
+
+p.resume-subtitle-contactinfo {
+  display: none;
 }
 
 div.content {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 900px;
+}
+
+div.resume-item {
+  page-break-inside: avoid;
 }
 
 span.item-title {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 span.item-subtitle {
-    font-style: italic;
+  font-style: italic;
 }
 
 th {
-    font-weight: bold;
-    text-align: left;
-    vertical-align: top;
-    text-transform: uppercase;
-    width: 15%;
-    padding-bottom: 12px;
-    padding-right: 5px;
+  font-weight: bold;
+  text-align: left;
+  vertical-align: top;
+  text-transform: uppercase;
+  width: 134px;
+  padding-bottom: 12px;
+  padding-right: 5px;
 }
 
 td {
-    vertical-align: top;
-    padding-bottom: 12px;
+  vertical-align: top;
+  padding-bottom: 12px;
 }
 
 p {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 ul {
-    margin: 0 0 10px 8px;
-    padding: 0 0 0 10px;
+  margin: 0 0 10px 8px;
+  padding: 0 0 0 10px;
 }
 
 li {
-    padding-bottom: 2px;
+  padding-bottom: 2px;
 }
 
+@media print {
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  p.resume-title {
+    font-size: 24px;
+  }
+
+  p.resume-subtitle-links {
+    display: none;
+  }
+
+  p.resume-subtitle-contactinfo {
+    display: block;
+    font-size: small;
+  }
+
+  table {
+    font-size: small;
+  }
+}
